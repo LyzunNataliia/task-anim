@@ -24,13 +24,15 @@
   background-color: red;
   margin-right: 8px;
   margin-left: 2px;
-  /* opacity : 0; */
-  transition: transform 0.4s, width 0.4s;
-  transform: scaleX(0);
+  opacity: 0;
+  /* transition: transform 0.4s, width 0.4s; */
+  transition: opacity 0.4s, width 0.4s;
+  /* transform: scaleX(0); */
   transform-origin: left;
 }
 .item:hover::before {
   width: 14px;
-  transform: scaleX(1);
+  opacity: 1;
+  /* transform: scaleX(1); */
   transform-origin: left;
 }
